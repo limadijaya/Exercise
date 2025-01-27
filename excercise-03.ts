@@ -11,6 +11,6 @@ let search_string:string = "ell";
 console.log(sentence.replace(search_string, ""));
 
 
-
+// Soal 10
 
 

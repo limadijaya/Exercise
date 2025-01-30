@@ -26,3 +26,25 @@ else if (typeof(mSentence1) == "number") {
 else {
     console.log("3")
 }
+
+
+
+// Soal 11
+let mSentence11:string = "an apple a day keeps the doctor away";
+let mStar: string = " ";
+
+//console.log(mSentence11.substring(0,4));
+
+let i: number;
+console.log(mSentence11.length)
+console.log(mSentence11.substring(0, 36));
+for (i = 0; i < mSentence11.length; i++) {
+    //console.log(i + mSentence11.substring(i,i+1));
+    //mStar = mSentence11.substring(i,1);
+    if (mSentence11.substring(i,i+1) === "a")
+        { mStar = mStar + "*"; }
+    else
+        { mStar = mStar + mSentence11.substring(i,i+1); }
+    
+    console.log(mStar);
+}
